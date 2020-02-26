@@ -149,6 +149,6 @@ gulp.task('default',
 gulp.task('build',
     gulp.series(
         'clean', 'bower' , 'vendorJs' ,
-    gulp.parallel('copyHTML' , 'sass' , 'babel')
+    gulp.parallel(/*'copyHTML' , */ 'sass' , 'babel')
     )
 )
