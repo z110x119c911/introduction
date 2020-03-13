@@ -12,11 +12,18 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scrollPos = $(window).scrollTop();
     var windowHeight = $(window).height();
-    $('.animate').each(function () {
+    $('.skill_animate').each(function () {
       var thisPos = $(this).offset().top;
 
       if (windowHeight + scrollPos >= thisPos) {
         $(this).addClass('fade-in');
+      }
+    });
+    $('.self_animate').each(function () {
+      var thisPos = $(this).offset().top;
+
+      if (windowHeight + scrollPos >= thisPos) {
+        $(this).addClass('slide-in');
       }
     });
     $('.bg-image').css('background-position-y', -(scrollPos / 2) + 'px');
