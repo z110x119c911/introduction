@@ -7669,6 +7669,17 @@ a.text-content:hover, a.text-content:focus {
   -webkit-transform: translateY(0px);
           transform: translateY(0px); }
 
+.slide_animate {
+  opacity: 0;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  transition: all 1s; }
+
+.slideIn {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px); }
+
 .bg-image {
   overflow: hidden;
   background-size: cover;
