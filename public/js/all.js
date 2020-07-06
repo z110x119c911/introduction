@@ -19,12 +19,13 @@ $(document).ready(function () {
         $(this).addClass('fade-in');
       }
     });
-    $('.slide_animate').each(function(){
+    $('.slide_animate').each(function () {
       var slideTop = $('.slide_animate').offset().top;
-      if (windowHeight + scrollPos >= slideTop){
+
+      if (windowHeight + scrollPos >= slideTop) {
         $('.slide_animate').addClass('slideIn');
       }
-    })
+    });
     $('.bg-image').css('background-position-y', -(scrollPos / 2) + 'px');
   });
 });
